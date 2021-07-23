@@ -1,0 +1,98 @@
+.price{
+
+    &__head{
+        background: $color-main;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        width: 100%;
+        color: $color-white;
+        font-weight: $bold;
+        padding: 20px 0;
+
+        p{
+            display: flex;
+            &:nth-child(1){
+                align-items: center;
+                font-size: 32px;
+                line-height: 36px;
+                margin-right: 10px;
+            }
+
+            &:nth-child(2){
+                font-size: 68px;
+                line-height: 62px;
+            }
+
+            &:nth-child(3){
+                align-items: flex-end;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        @media (min-width: 991px){
+            padding: 41px 0px;
+        }
+    }
+
+    &__body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color:$color-font;
+        font-size: 18px;
+        padding: 27px 20px 20px 20px;
+        flex-grow: 1;
+
+        P{
+            padding: 20px 0px;
+            position: relative;
+            text-transform: uppercase;
+
+            &:not(:last-of-type){
+
+                &:before{
+                    position: absolute;
+                    content: '';
+                    width: 99px;
+                    height: 1px;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: $color-before;
+                }
+            }
+
+            @media (min-width: 991px){
+                padding: 25px 0 22px 0;
+            }
+        }
+    }
+
+    a{
+        display: block;
+        color: $color-white;
+        background: $background-button;
+        border-radius: $form-border-radius;
+        font-weight: $semi-bold;
+        font-size: 18px;
+        text-align: center;
+        padding: 17px;
+        min-width: 170px;
+        transition: $animation-speed;
+        margin-bottom: 20px;
+
+        &:hover{
+            background: darken($color: $background-button, $amount: 30%);
+        }
+
+        @media (min-width: 991px){
+            margin: 0 0 51px 0;
+        }
+    }
+    
+    @media (min-width: 991px){
+        padding: 72px 0 62px 0px;
+    }
+}

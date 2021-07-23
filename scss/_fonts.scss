@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'free';
+    src: url('../fonts/FREESCPT.woff2') format('woff2'),
+         url('../fonts/FREESCPT.woff') format('woff'),
+}
+
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/open-sans-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+  }
+  /* open-sans-600 - latin_cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v20-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v20-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+  }
+  /* open-sans-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+  }
+
+  @font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.woff?pb4ldi') format('woff'),
+         url('../fonts/icomoon.svg?pb4ldi#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-linkedin:before {
+    content: "\e900";
+  }
+  .icon-twitter:before {
+    content: "\e901";
+  }
+  .icon-facebook:before {
+    content: "\e902";
+  }
+  .icon-next:before {
+    content: "\e903";
+  }
+  .icon-prev:before {
+    content: "\e904";
+  }
+  .icon-phone:before {
+    content: "\e942";
+  }
+  .icon-envelop:before {
+    content: "\e945";
+  }
+  .icon-location2:before {
+    content: "\e948";
+  }
+  .icon-search:before {
+    content: "\e986";
+  }
+  .icon-circle-up:before {
+    content: "\ea41";
+  }
+  .icon-circle-right:before {
+    content: "\ea42";
+  }
+  .icon-circle-down:before {
+    content: "\ea43";
+  }
+  .icon-circle-left:before {
+    content: "\ea44";
+  }
+  .icon-google-plus3:before {
+    content: "\ea8d";
+  }
+  .icon-dribbble:before {
+    content: "\eaa7";
+  }
+  .icon-pinterest:before {
+    content: "\ead1";
+  }
+  

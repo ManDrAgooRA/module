@@ -1,0 +1,112 @@
+.footer{
+
+    background: $background-footer;
+    color: $color-white;
+    line-height: 22px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    
+        @media (min-width: 991px){
+            justify-content: space-between;
+            flex-flow: row wrap;
+            padding: 96px 0 104px 0;
+        }
+    }
+
+    h3{
+        font-size: 18px;
+        font-weight: $bold;
+        margin: 0 0 52px 0;
+        text-transform: uppercase;
+    }
+
+    span{
+        display: block;
+        margin: 0 0 20px 0;
+        
+        @media (min-width: 991px){
+            font-size: 12px;
+        }
+    }
+
+    &__about{
+
+        span{
+            font-size: 14px;
+        }
+        @media (min-width: 991px){
+            padding: 0px 116px 0 0;
+            width: 50%;
+        }
+    }
+
+    &__contact{
+
+        @media (min-width: 991px){
+            flex-basis: 50%;
+            padding: 0px 0px 0px 17px;
+        }
+    }
+
+    &__links{
+
+        span{
+            display: flex;
+            align-items: center;
+            margin: 0 12px 0 0;
+            color: $color-white;
+            font-family: $font-icon;
+            font-size: 14px;
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+            font-family: $font-base;
+            font-weight: $regular;
+            color: $color-white;
+            font-size: 14px;
+            margin: 0 0 10px 0;
+
+            @media (min-width: 768px){
+                width: 50%;
+                margin: 0px 0 40px 0;
+            }
+        }
+
+        @media (min-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    
+    &__social{
+        display: flex;
+        margin-top: 20px;
+        a{  
+            display: flex;
+            color: $color-white;
+            font-size: 24px;
+            font-family: $font-icon;
+            margin: 0 12px 0 0 ;
+            &:hover{
+                color: darken($color: $color-white, $amount: 20%)
+            }
+        }
+        @media (min-width: 768px){
+            margin-top: 10px;
+        }
+    }
+
+    &__copy{
+        text-align: center;
+        font-size: 16px;
+        color: $color-copyright;
+        background: $background-copy;
+        padding: 40px 0 38px 0;
+    }
+}
